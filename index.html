@@ -8,10 +8,10 @@
     <title>Bootstrap Form</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <div class="card">
                 <div class="card-header">
-                    Payment from Example
+                    <h4>Payment from Example</h4>
                 </div>
             <div class="container-fluid">
                 <div class="alert alert-danger mt-3" role="alert">
@@ -23,69 +23,79 @@
                     <div class="row ">
                         <div class="col">
                             <label for="CC">Card #</label>
-                            <input type="text" class="form-control" placeholder="XXX-XXX-XXX">
+                            <input type="number" class="form-control mt-1" placeholder="XXX-XXX-XXX">
                         </div>
                         <div class="col-3">
                             <label for="">CVC #</label>
-                            <input type="text" class="form-control" placeholder="1234">
+                            <input type="number" class="form-control mt-1" placeholder="1234">
                         </div>
                         <div class="col-4">
                             <label for="">Amount</label>
-                            <input type="text" class="form-control" placeholder="Amount">
+                            <input type="number" class="form-control mt-1" placeholder="Amount">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col mt-3">
                             <label for="">First Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control mt-1">
                         </div>
                         <div class="col mt-3">
                             <label for="">Last Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control mt-1">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6 mt-3">
                             <label for="">City</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control mt-1">
                         </div>
                         <div class="col-3 mt-3">
                             <label for="">State</label>
-                            <input type="text" class="form-control" placeholder="Pick a state">
+                            <select class="form-control mt-1">
+                                <option selected>Pick a state</option>
+                                <option>Aragua</option>
+                                <option>Falcon</option>
+                                <option>Miranda</option>
+                            </select>
                         </div>
                         <div class="col-3 mt-3">
                             <label for="">Postal Code</label>
-                            <input type="text" class="form-control">
+                            <input type="number" class="form-control mt-1">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col mt-3">
                             <label for="">We Accept:</label>
+                            <div class="d-flex bg-secondary rounded mt-3 p-1" style="width: 230px;">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2"><i class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2"><i class="fa-brands fa-cc-amex"></i></label>
+                                </div>
+                            </div>
                         </div>
                         <div class="col mt-3">
                             <label for="">Message</label>
-                            <input type="text-area" class="form-control">
+                            <textarea class="form-control mt-2" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <small id="passwordHelpBlock" class="form-text text-muted">
+                                 Add any notes here.
+                            </small>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <div class="col-6 inline bg-secondary">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1"><i class="fa-brands fa-cc-mastercard"></i></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2"><i class="fa-brands fa-cc-visa"></i></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2"><i class="fa-brands fa-cc-diners-club"></i></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2"><i class="fa-brands fa-cc-amex"></i></label>
-                            </div>
                         </div>
                         </div>
                     </div>
